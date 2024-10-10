@@ -15,7 +15,7 @@ OBS:
 a ideia com esse trabalho NÃO É PREVER preços de ações e moedas, mas sim observar como eles variam
 de acordo com a mudança de certos parâmetros, a mudança destes parâmetros pode, ou não, se aproximar do que ocorre no mundo real, apesar do modelo se basear na economia estudada em sociedades reais.
 
-**Innterface gráfica**
+## Innterface gráfica
 
 Para interface gráfica do E-Barter será usada a biblioteca gráfica de Pyhon CustomTkinter.
 
