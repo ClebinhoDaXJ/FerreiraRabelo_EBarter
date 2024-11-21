@@ -145,8 +145,8 @@ Society::Society(World* mundo, string sname, string cname, vector<float> sqval, 
     //fornece um valor inicial para a moeda.
     float sum = 0;
     for(int i=0; i<world->n_g; i++)
-            sum += *sqv[i]/(1+*svv[i]);
-    cvalue = sum/_totalNativa;
+            sum += *sqv[i]**svv[i];
+    cvalue = sum/(1+_totalNativa);
     cout << _sname << ": valor inicial da moeda: " << cvalue << endl;
 }
 
@@ -169,7 +169,7 @@ inline void Society::atlzCValue(){
     consigo comprá-lo tão facilmente.
     */
     for(int i=0; i<world->n_g; i++)
-        sum += *world->qm[i][index]/(1 + *world->vm[i][index]);
+        sum += *world->qm[i][index]**world->vm[i][index];
     cvalue = sum/(1 + _totalNativa);  
     if(cvalue > 1000)
         cvalue = 1000;
@@ -202,9 +202,9 @@ de Society separadamente, isto é, fora do mundo e sem usar a função sadd.
 
 World::World(){
     n_s = 0; n_g = 0;
-    gadd("firstGood", {}, {}, {});
-    sadd("firstSociety", "firstCoin", {0.1}, {0.2}, {0.3});
-    sadd("secondSociety", "secondCoin", {0.}, {0.}, {0.});
+    gadd("Pão", {}, {}, {});
+    sadd("Ferreira", "Kwanza", {12}, {7}, {5});
+    sadd("Rabelo", "USD", {7}, {4}, {1});
 }
 
 World::~World(){
@@ -389,7 +389,7 @@ Operation::Operation(World* mundo, int numero_op){
     isso vai fazer o valor das moedas mudar ao longo do tempo. 
     */
         for(int j=0; j<world->n_s; j++)
-            ivv.push_back(world->societies[j]->cvalue);
+            ivv.push_back(generate(100)); //world->societies[j]->cvalue
         opMatrix.push_back(ivv);
         ivv.clear();
         if(OpType()){ 
@@ -495,9 +495,15 @@ inline void Operation::atlzCoin(){
 
 inline void Operation::atlzGood(){
     //calcula o preço de uma unidade do bem na moeda do comprador.
-    float price = *world->vm[good->index][buyer->index]/buyer->cvalue;
+    float price = *world->vm[good->index][buyer->index]/(0.0001+buyer->cvalue);
     //sorteia a quantidade de bens na transação.
     int qtd = generateQtdG();
+    if(price*qtd > buyer->_totalNativa){
+        if(price > buyer->_totalNativa)
+            qtd = 0;
+        else
+            qtd = 1;
+    }
     //entra num loop para verificar se o comprador tem dinheiro pra pagar.
     cout << "numero de bens trocados: " << qtd << endl;
     //é realizada a troca dos bens.
