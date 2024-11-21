@@ -3,7 +3,8 @@ Ideia chave:
 *criar uma simulação de ecônomia em um "mundo" com diversas sociedades.
 
 Objetivo final:
-*printar gráficos valor X tempo da moeda de cada sociedade.
+O usuário do app vai poder ajustar valores de parametros para mudar a forma como o valor de uma moeda muda ao longo do tempo e, com isso, 
+tentar ajustar o grafico valorXtempo com gráficos reais, aprendendo o que pode causar a variação do preço de uma moeda real. 
 
 Fatores que levam à variação do valor da moeda:
 *produtos originários da sociedade.
@@ -13,7 +14,8 @@ Fatores que levam à variação do valor da moeda:
 
 OBS: 
 a ideia com esse trabalho NÃO É PREVER preços de ações e moedas, mas sim observar como eles variam
-de acordo com a mudança de certos parâmetros, a mudança destes parâmetros pode, ou não, se aproximar do que ocorre no mundo real, apesar do modelo se basear na economia estudada em sociedades reais.
+de acordo com a mudança de certos parâmetros, a mudança destes parâmetros pode, ou não, se aproximar do que ocorre no mundo real, apesar do modelo se basear na economia estudada em sociedades reais. 
+
 
 ## Interface gráfica
 
