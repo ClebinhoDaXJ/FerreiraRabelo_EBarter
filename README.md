@@ -16,6 +16,8 @@ OBS:
 a ideia com esse trabalho NÃO É PREVER preços de ações e moedas, mas sim observar como eles variam
 de acordo com a mudança de certos parâmetros, a mudança destes parâmetros pode, ou não, se aproximar do que ocorre no mundo real, apesar do modelo se basear na economia estudada em sociedades reais. 
 
+## Diagrama de classes:
+![diagrama de classes](images/diagrama_de_classes.jpeg)
 
 ## Interface gráfica
 
@@ -26,3 +28,5 @@ Basta, instalá-la e importá-la no código. Funções como CTk() criam uma jane
 Para escrever algo na janela, basta usar a função CTklabel(janela,"text"), para adicionar uma imagem usa-se CTkImage(imagem = Image.open("imagem.png"). Cada texto ou atributo adicionado na janela pode ter sua posição ajustada pela função pack().
 
 Pode-se adicionar um botão com CTkButton(janela,"text") e ele pode chamar uma função quando ativado: CTkButton(janela,"text",commad=function).
+
+
