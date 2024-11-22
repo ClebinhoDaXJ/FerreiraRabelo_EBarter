@@ -7,10 +7,20 @@ O app possui tem finalidade educativa. O usuário pode ajustar parâmetros de be
 realidade. Desse modo, o usuário aprenderá como diferentes fatores econômicos influenciam o preço de moedas em sociedades reais. 
 
 Fatores que levam à variação do valor da moeda:
+
+
 *quanitidades que as sociedades têm de cada bem.
+
+
 *dificuldades e necessidades de possuir esses bens.
+
+
 *negociação dos produtos com outras sociedades.
+
+
 *negociação de moedas entre diferentes sociedades.
+
+
 *determindada sociedade pode possuir parte de sua riqueza como moeda de outra sociedade.
 
 ## Diagrama de classes:
