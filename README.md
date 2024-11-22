@@ -40,6 +40,6 @@ Pode-se adicionar um botão com CTkButton(janela,"text") e ele pode chamar uma f
 
 ## Dinâmicas do programa:
 
-![fluxograma_geral](images/Fluxogramas(1).jpeg)
+![fluxograma_geral](images/Fluxogramas.jpeg)
 
 
