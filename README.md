@@ -1,20 +1,17 @@
 # E-Barter
 Ideia chave:
-*criar uma simulação de ecônomia em um "mundo" com diversas sociedades.
+Criar um app que simule o valor da moeda de diferentes sociedades fictícias.
 
 Objetivo final:
-O usuário do app vai poder ajustar valores de parametros para mudar a forma como o valor de uma moeda muda ao longo do tempo e, com isso, 
-tentar ajustar o grafico valorXtempo com gráficos reais, aprendendo o que pode causar a variação do preço de uma moeda real. 
+O app possui tem finalidade educativa. O usuário pode ajustar parâmetros de bens e sociedades para alterar o rumo da simulação, de forma a aproximá-la da 
+realidade. Desse modo, o usuário aprenderá como diferentes fatores econômicos influenciam o preço de moedas em sociedades reais. 
 
 Fatores que levam à variação do valor da moeda:
-*produtos originários da sociedade.
-*negociação desses produtos dentro da própria sociedade.
+*quanitidades que as sociedades têm de cada bem.
+*dificuldades e necessidades de possuir esses bens.
 *negociação dos produtos com outras sociedades.
-*um indíviduo de determindada sociedade pode possuir parte de sua riqueza como moeda de outra sociedade.
-
-OBS: 
-a ideia com esse trabalho NÃO É PREVER preços de ações e moedas, mas sim observar como eles variam
-de acordo com a mudança de certos parâmetros, a mudança destes parâmetros pode, ou não, se aproximar do que ocorre no mundo real, apesar do modelo se basear na economia estudada em sociedades reais. 
+*negociação de moedas entre diferentes sociedades.
+*determindada sociedade pode possuir parte de sua riqueza como moeda de outra sociedade.
 
 ## Diagrama de classes:
 ![diagrama de classes](images/diagrama_de_classes.jpeg)
