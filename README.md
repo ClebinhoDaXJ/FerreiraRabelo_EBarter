@@ -3,7 +3,7 @@ Ideia chave:
 Criar um app que simule o valor da moeda de diferentes sociedades fictícias.
 
 Objetivo final:
-O app possui tem finalidade educativa. O usuário pode ajustar parâmetros de bens e sociedades para alterar o rumo da simulação, de forma a aproximá-la da 
+O app possui tem finalidade educativa. O usuário pode ajustar parâmetros de bens e sociedades para alterar o rumo da simulação de forma a aproximá-la da 
 realidade. Desse modo, o usuário aprenderá como diferentes fatores econômicos influenciam o preço de moedas em sociedades reais. 
 
 Fatores que levam à variação do valor da moeda:
@@ -17,6 +17,8 @@ Fatores que levam à variação do valor da moeda:
 ![diagrama de classes](images/diagrama_de_classes.jpeg)
 
 ## Interface gráfica
+# Esboço da interface gráfica:
+![esboço](images/E-Barter_Esboco.jpg)
 
 Para interface gráfica do E-Barter será usada a biblioteca gráfica de Pyhon CustomTkinter.
 
