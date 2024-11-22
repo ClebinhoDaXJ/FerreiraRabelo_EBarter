@@ -29,4 +29,8 @@ Para escrever algo na janela, basta usar a função CTklabel(janela,"text"), par
 
 Pode-se adicionar um botão com CTkButton(janela,"text") e ele pode chamar uma função quando ativado: CTkButton(janela,"text",commad=function).
 
+## Fluxograma geral do programa:
+
+![fluxograma_geral](images/fluxograma_geral.jpeg)
+
 
