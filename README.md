@@ -42,4 +42,22 @@ Pode-se adicionar um botão com CTkButton(janela,"text") e ele pode chamar uma f
 
 ![fluxograma_geral](images/Fluxogramas.jpeg)
 
+## Instruções para rodar o programa:
+
+No powershell devem ser dadas os seguintes comandos em sequência:
+
+
+g++ -c Ebarter.cpp -o Ebarter.o
+
+
+g++ Ebarter.o main.cpp -o nome_do_arquivo_executavel.exe
+
+
+g++ -std=c++11  Ebarter.o main.cpp -o nome_do_arquivo_executavel.exe -lws2_32
+
+
+./nome_do_arquivo_executavel.exe
+
+
+Em seguida, abra outro terminal e rode o código 'frontend.py'.
 
